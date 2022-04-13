@@ -1,0 +1,17 @@
+import React from 'react';
+import { SafeAreaView,Text,View ,TextInput} from 'react-native';
+
+import styles from './Input.style';
+
+function Input({label,onChangeText}){
+    return(
+    <View>
+     <Text style={styles.label}>{label}</Text>
+     <View style={styles.input_container}>
+        <TextInput onChangeText={onChangeText} placeholder={placeholder}  />
+     </View>
+    </View>
+    );
+}
+
+export default Input;
